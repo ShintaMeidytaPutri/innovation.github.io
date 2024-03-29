@@ -1,0 +1,187 @@
+*,
+html{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    background: linear-gradient(to bottom, #FFFFFF, #888888);
+}
+
+.container {
+    height: 100vh;
+}
+.navbar2-container {
+    width: 100%;
+    height: 13.7vh;
+    background-color: rgb(24, 22, 22);
+}
+
+.ul-navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px
+    }
+    
+    .li-navbar {
+      padding: 10px 20px;
+      list-style-type: none;
+      color: white;
+      margin: 3px 10px;
+      font-size: 15px;
+    }
+
+    .li-navbar2 {
+      padding: 10px 20px;
+      list-style-type: none;
+      color: white;
+      font-size: 15px;
+      float: right;
+      margin: 3px 10px;
+    }
+   
+    .li-navbar:hover{
+        background-color: grey;                   /*Untuk dekorasi mouse yang digeser*/ 
+        transition: .1s ease-in-out;
+        transition-delay: .2s;
+        border-radius: 9px;
+    }
+
+    .li-navbar2:hover{
+      background-color: grey;                   /*Untuk dekorasi mouse yang digeser*/ 
+      transition: .1s ease-in-out;
+      transition-delay: .2s;
+      border-radius: 9px;
+  }
+    
+    .a-navbar{
+        color: white;
+        text-decoration: none;
+        font-weight: 50;  
+    }
+
+    .anggota-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+  
+     
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    th, td {
+      padding: 12px;
+      text-align: left;
+      border: 1px solid #ddd;
+    }
+
+    th {
+      padding: 8px 12px;
+      background-color: #f2f2f2;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 15px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    tr:hover {
+      background-color: #e5e5e5;
+      transition: background-color 0.3s;
+    }
+
+    td:first-child {
+      font-weight: bold;
+    }
+
+    td:nth-child(3),
+    td:nth-child(5),
+    td:nth-child(7) {
+      text-transform: capitalize;
+    }
+
+    td:nth-child(1),
+    td:nth-child(2),
+    td:nth-child(6) {
+      font-style: italic;
+    }
+      
+
+    /* Style untuk Animasi */
+    .animated-text {
+      text-align: center;
+      margin-top: 35px;
+  }
+  
+  .animated-text h1 {
+      font-size: 40px;
+      color: black;
+      animation: animateText 2s linear infinite;
+  }
+  
+  /* Animasi Teks */
+  @keyframes animateText {
+      0% {
+          transform: translateY(0);
+      }
+      50% {
+          transform: translateY(-20px);
+      }
+      100% {
+          transform: translateY(0);
+      }
+  }
+    .video-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .video-container video {
+      width: 50%;
+    }
+
+    .text-container {
+      width: 50%;
+      padding-left: 20px;
+      margin-top: 10px;
+  }
+  
+  .text-container p {
+      font-size: 20px;
+      line-height: 1.5;
+      margin-bottom: 10px;
+  }
+
+  p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5em;
+    text-align: justify;
+    margin: 0;
+    padding: 10px;
+    margin-bottom: 10px;
+    opacity: 0; /* Menyembunyikan elemen paragraf */
+    transform: translateY(-30px); /* Menggeser posisi elemen ke atas sejauh 30px */
+    animation: slide-in 1s ease forwards;
+    /* Menambahkan animasi dengan nama 'slide-in' dengan durasi 1 detik, efek easing,
+       dan berakhir pada langkah terakhir */
+  }
+  
+  @keyframes slide-in {
+    from {
+      opacity: 0; /* Opacity pada langkah awal */
+      transform: translateY(-30px); /* Menggeser ke atas sejauh 30px pada langkah awal */
+    }
+    to {
+      opacity: 1; /* Opacity pada langkah akhir */
+      transform: translateY(0); /* Tidak lagi menggeser posisi pada langkah akhir */
+    }
+  }

@@ -1,0 +1,103 @@
+*{
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    height: 100vh;
+    background-image: url(https://cdn.pixabay.com/photo/2016/02/16/21/07/books-1204029_1280.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.navbar-container {
+    width: 100%;
+    height: 12vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    font-size: 13px;
+    font-style: italic;
+    color: white;
+}
+
+.navbar-container h1 {
+  overflow: hidden; /* Menyembunyikan teks yang melebihi lebar container */
+  border-right: 2px solid white; /* Membuat efek cursor */
+  white-space: nowrap; /* Mencegah pemisahan kata menjadi beberapa baris */
+  margin: 0 auto; /* Posisi teks menjadi rata tengah */
+  letter-spacing: 0.12em; /* Spasi antar huruf */
+  animation: typing 1.5s steps(20), blink-caret 0.5s step-end infinite; /* Animasi ketikan */
+}
+
+@keyframes typing {
+  from {
+      width: 0; /* Mulai dengan lebar 0 */
+  }
+  to {
+      width: 22%; /* Akhiri dengan lebar penuh */
+  }
+}
+
+@keyframes blink-caret {
+  45% {
+      border-color: transparent; /* Animasi kedipan cursor */
+  }
+}
+
+.container{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  padding: 20px 25px;
+  width: 300px;
+
+  background-color: rgba(0,0,0,.7);
+  box-shadow: 0 0 10px rgba(255,255,255,.3);
+}
+
+.container form input{
+  width: 100%;
+  padding: 8px 10px;
+  margin-bottom: 15px;
+  border: none;
+  background-color: transparent;
+  border-bottom: 2px solid whitesmoke;
+  color: white;
+  font-size: 19px;
+}
+
+input[type=button]{
+  font-size: 16px;
+  background: linear-gradient(grey 5%, rgb(92, 91, 91) 100%);
+  border: 1px solid grey;
+  color: #4E4D4B;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 5px;
+  padding: 10px 0;
+  outline:none;
+}
+
+.container label{
+  text-align: left;
+  color: white;
+}
+ 
+  #mainContent {
+    margin-top: 20px;
+  }
+  
+  #loginContainer {
+    display: none;
+  }
+  
+.alert {
+  color: white;
+}
